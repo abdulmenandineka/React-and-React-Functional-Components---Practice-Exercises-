@@ -1,0 +1,397 @@
+/* Ensure that the body and html take up the full height */
+html, body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+/* Style for the header and navigation */
+header {
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 0 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li img {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+nav ul li:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+/* UNDER HEADER */
+.under-header-paragraph-div {
+    padding: 10px;
+}
+
+.under-header-paragraph-div p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.under-header-paragraph-div p a {
+    color: rgb(0,113,227);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.under-header-paragraph-div p a:hover {
+    color: rgb(0,113,227);
+}
+
+.under-header-paragraph-div p a::after {
+    content: '>';
+    color: rgb(0,113,227);
+}
+
+/* MAIN SECTION */
+.section-1, .section-2, .section-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.section-1 {
+    background-image: url('./all img/10002.jpg');
+}
+
+.section-2 {
+    background-image: url('./all img/10003.jpg');
+    justify-content: center;
+}
+
+.section-3 {
+    background-image: url('./all img/10004.jpg');
+}
+
+.section-1 h1, .section-1 h2, 
+.section-2 h1, .section-2 h2, 
+.section-3 h2 {
+    color: white;
+    margin: 0;
+}
+
+.section-1 h1 {
+    font-size: 2.5rem;
+}
+
+.section-1 h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.section-2 h1, .section-2 h2 {
+    color: black;
+    margin: 0 0 10px;
+}
+
+.section-2 h1 {
+    font-size: 3em;
+}
+
+.section-2 h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.section-3 h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-1 ul, .section-2 ul, .section-3 ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-1 ul li a, 
+.section-2 ul li a, 
+.section-3 ul li a {
+    text-decoration: none;
+    color: rgb(0,113,227);
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+    position: relative;
+}
+
+.section-1 ul li a::after, 
+.section-2 ul li a::after, 
+.section-3 ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0,113,227);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.section-1 ul li a:hover::after,
+.section-2 ul li a:hover::after,
+.section-3 ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* SIDE BY SIDE */
+.section-4, .section-5, .section-6 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 8px;
+    height: 500px;
+}
+
+.section-4 .left-div, .section-4 .right-div,
+.section-5 .left-div, .section-5 .right-div,
+.section-6 .left-div, .section-6 .right-div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.section-4 .left-div {
+    background-image: url('./all img/watchh.jpg');
+}
+
+.section-4 .right-div {
+    background-image: url('./all img/watch 2.jpg');
+}
+
+.section-5 .left-div {
+    background-image: url('./all img/girl.jpg');
+}
+
+.section-5 .right-div {
+    background-image: url('./all img/hand phone.jpg');
+}
+
+.section-6 .left-div {
+    background-image: url('./all img/earphone.jpg');
+}
+
+.section-6 .right-div {
+    background-image: url('./all img/apple card.jpg');
+}
+
+.section-4 h1, .section-4 h2, 
+.section-5 h1, .section-5 h2, 
+.section-6 h1, .section-6 h2 {
+    color: black;
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.section-5 h1, .section-6 h1 {
+    font-size: 2em;
+}
+
+.section-6 h1, .section-6 h2 {
+    color: black;
+}
+
+.section-4 ul, .section-5 ul, .section-6 ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-4 ul li a, 
+.section-5 ul li a, 
+.section-6 ul li a {
+    text-decoration: none;
+    color: rgb(0,113,227);
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+    position: relative;
+}
+
+.section-4 ul li a::after, 
+.section-5 ul li a::after, 
+.section-6 ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0,113,227);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.section-4 ul li a:hover::after,
+.section-5 ul li a:hover::after,
+.section-6 ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* FOOTER */
+footer {
+    background-color: #f5f5f7;
+    padding: 1em 180px 25px 170px;
+    color: #6e6e73;
+}
+
+footer .sec1 p {
+    margin-bottom: 10px;
+}
+
+footer .sec1 a {
+    color: #6e6e73;
+}
+
+footer .sec2-flex-section {
+    font-size: 12px;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .sec2-flex-section div {
+    width: 30%;
+    margin-right: 30px;
+}
+
+footer .sec2-flex-section div div {
+    margin-top: 25px;
+    width: 100%;
+}
+
+footer .sec2-flex-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .sec2-flex-section ul li {
+    padding-bottom: 10px;
+}
+
+footer .sec2-flex-section ul li a {
+    text-decoration: none;
+    color: #6e6e73;
+}
+
+#find {
+    color: rgb(0, 102, 204);
+    text-decoration: underline;
+}
+
+footer .sec2-flex-section a:hover {
+    color: black;
+    opacity: 0.7;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+footer .sec3 .div-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .sec3 .div-1 ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+footer .sec3 .div-1 ul li {
+    margin: 0 15px;
+}
+
+footer .sec3 .div-1 ul li a {
+    text-decoration: none;
+    color: #6e6e73;
+}
+
+footer .sec3 .div-1 ul li a:hover {
+    color: black;
+}
+
+/* Adjust font sizes and spacing for mobile view */
+@media (max-width: 768px) {
+    .section-1 h1, .section-2 h1, .section-3 h1,
+    .section-1 h2, .section-2 h2, .section-3 h2 {
+        font-size: 1.5em;
+    }
+
+    .section-4, .section-5, .section-6 {
+        flex-direction: column;
+    }
+
+    .section-4 .left-div, .section-4 .right-div,
+    .section-5 .left-div, .section-5 .right-div,
+    .section-6 .left-div, .section-6 .right-div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 1em;
+    }
+}
